@@ -30,9 +30,12 @@ h1,h2,h3,h4,h5,h6 {
 .menu {
     position: fixed;
     border-right: 1px solid #dddddd;
-    width: 17%;
+    width: 240px;
     z-index: 9999;
     height: 100vh;
+    background-image: linear-gradient(to bottom, #17a2b8,#9de5f1);
+    color: #fff;
+    font-weight: 500;
 }
 
 .logo {	

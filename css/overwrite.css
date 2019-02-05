@@ -193,3 +193,7 @@ th {
     stroke-linejoin: round;
     fill: none;
 }
+
+ul li a {
+    color: #fff;
+}
