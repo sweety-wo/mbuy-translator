@@ -43,6 +43,10 @@ body {
     height: 37px!important;
 }
 
+.label {
+    font-weight: 600!important;
+}
+
 .input-height {
     height: 37px!important;
 }
@@ -56,7 +60,7 @@ th {
     border-top: none!important;
 }
 
-.fa {
+.mx-5{
     margin: 0 5px!important;
 }
 
@@ -102,4 +106,14 @@ th {
 .col-form-label{
     color: black;
     font-weight: 700;
+}
+
+.form-inline{
+    width:100% !important;
+    justify-content: space-between!important;
+    align-items: center!important;
+}
+
+.modal-body {
+    padding: 50px!important;
 }

@@ -62,10 +62,10 @@ h1,h2,h3,h4,h5,h6 {
      display: block!important;
  }
 
-.nav-stacked > li + li + li{
+/*.nav-stacked > li{
   margin-top: 20px;
   margin-left: 0;
-}
+}*/
 
 .nav-stacked li a {
 	/*text-transform:uppercase;*/
@@ -219,9 +219,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .form-group .form-control {
-   background:#f6f6f6;
   padding: 7px 12px;
-  border-color:#eee;
   box-shadow: none;
 }
 

@@ -41,7 +41,7 @@
             </li>
             <li role="presentation"><a class="navbar-left">Project</a>
               <ul class="nav nav-pills nav-stacked py-10">
-                <li role="presentation"><a class="navbar-left" data-toggle="modal" data-target="#exampleModalCenter">New</a></li>
+                <li role="presentation"><a class="navbar-left" data-toggle="modal" data-target="#newProject">New</a></li>
                 <li role="presentation"><a class="navbar-left">Select</a></li>
               </ul>
             </li>
@@ -58,44 +58,6 @@
               </ul>
             </li>
           </ul>
-          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalCenterTitle">Create Project</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="form">
-                    <div class="form-group row">
-                      <label for="name" class="col-sm-2 col-form-label">Name</label>
-                      <div class="col-sm-1"></div>
-                      <div class="col-sm-9">
-                        <input type="text" class="form-control" id="name">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="language" class="col-sm-2 col-form-label">Language</label>
-                      <div class="col-sm-1"></div>
-                      <div class="col-sm-9">
-                        <select class="form-control" id="language">
-                          <option>EN</option>
-                          <option>SN</option>
-                          <option>FN</option>
-                          <option>GM</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-success" data-dismiss="modal">Add</button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -104,33 +66,138 @@
         <div class="nav-outline">
           <form class="form-inline">
             <div class="form-group">
-              <label for="projectName">Project</label>
+              <label for="projectName" class="label">Project</label>
+              <button type="button" class="btn btn-link"  data-toggle="modal" data-target="#editProject"  style="color: black"><i class="fa fa-edit"></i></button>
               <input type="text" id="projectName" class="form-control mx-sm-3">
             </div>
             <div class="form-group">
-              <label for="languageSelected">Language</label>
+              <label for="languageSelected" class="label">Language</label>
               <input type="password" id="languageSelected" class="form-control mx-sm-3">
             </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sendToTranslate">Send to translate</button>
           </form>
         </div>
       </nav>
+      <div class="modal fade" id="newProject" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Create Project</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form">
+                <div class="form-group row">
+                  <label for="name" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control input-height" id="name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="language" class="col-sm-2 col-form-label">Language</label>
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-9">
+                    <select class="form-control" id="language">
+                      <option>EN</option>
+                      <option>SN</option>
+                      <option>FN</option>
+                      <option>GM</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="sendToTranslate" tabindex="-1" role="dialog" aria-labelledby="sendToTranslate" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="ModalCenterTitle">Send to translate</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form">
 
+                <div class="form-group row">
+                  <label for="translationType" class="col-sm-2 col-form-label">Translation Type</label>
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-9">
+                    <select class="form-control" id="translationType">
+                      <option>EN</option>
+                      <option>SN</option>
+                      <option>FN</option>
+                      <option>GM</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="notes" class="col-sm-2 col-form-label">Notes</label>
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-9">
+                    <textarea id="notes" style="width: 100%;"></textarea>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="editProject" tabindex="-1" role="dialog" aria-labelledby="editProject" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Update Project</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form">
+                <div class="form-group row">
+                  <label for="updateName" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control input-height" id="updateName">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="updateLanguage" class="col-sm-2 col-form-label">Language</label>
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-9">
+                    <select class="form-control" id="updateLanguage">
+                      <option>EN</option>
+                      <option>SN</option>
+                      <option>FN</option>
+                      <option>GM</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Update</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/javascript" src="js/fliplightbox.min.js"></script>
-<script type="text/javascript">
-    $('#graphics').flipLightBox()
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/javascript" src="js/fliplightbox.min.js"></script>
-<script type="text/javascript">
-    $('#graphics').flipLightBox()
-</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
