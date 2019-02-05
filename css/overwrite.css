@@ -132,3 +132,64 @@ th {
     border: 1px solid #ced4da;
     border-radius: .25rem;
 }
+
+.sideNav ul.sideNav-list li {
+    padding: 0px 8px 1px 8px;
+}
+
+.sideNav ul.sideNav-list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.sideNav .sideNav-list a.active, .sideNav .sideNav-list a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sideNav .sideNav-list a.nav-label {
+    position: relative;
+}
+
+.sideNav .sideNav-list a {
+    font-size: 0.8rem;
+    padding: 8px 11px;
+    min-height: 38px;
+    min-width: 40px;
+    white-space: nowrap;
+    display: block;
+    text-decoration: none;
+    border-radius: 20px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#_slideNav {
+    padding-top: 66px;
+    -webkit-transition: width 2s;
+    transition: width 0.2s;
+    overflow-y: auto;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    transition: 300ms;
+}
+
+.sideNav .sideNav-list .feather {
+    margin-right: 5px;
+    float: left;
+    min-height: 20px;
+}
+
+
+.feather {
+    width: 14px;
+    height: 20px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
