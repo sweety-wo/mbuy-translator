@@ -23,7 +23,7 @@ body {
 }
 
 .navbar-brand{
-    font-size: 30px!important;
+    font-size: 25px!important;
     font-weight: 700!important;
 }
 
@@ -39,7 +39,7 @@ body {
 
 .flex-nowrap{
     flex-wrap: nowrap!important;
-    width: 20% !important;
+    width: 100% !important;
     height: 37px!important;
 }
 
@@ -148,27 +148,52 @@ th {
 }
 
 .sideNav .sideNav-list a.nav-label {
+    display: inline-block;
     position: relative;
+    margin-left: 15px;
+    width: 94%;
 }
 
 .sideNav .sideNav-list a {
-    font-size: 0.8rem;
+    width: 90%;
+    font-size: 0.9rem;
     padding: 8px 11px;
     min-height: 38px;
     min-width: 40px;
     white-space: nowrap;
-    display: block;
     text-decoration: none;
     border-radius: 20px;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
     transition: all 1s ease;
 }
 
+
+.nav-text{
+    margin-left: 5px;
+}
+
+.nav-submenu {
+    list-style: disc;
+    list-style-position: inside;
+    margin-left: 15px;
+}
+
+.nav-submenu a  {
+    display: inline-grid;
+    margin-left: -16px;
+}
+
+
+.nav-submenu a:hover{
+    text-decoration: underline;
+    background-color: transparent!important;
+}
+
+
 #_slideNav {
-    padding-top: 66px;
+    padding-top: 45px;
     -webkit-transition: width 2s;
     transition: width 0.2s;
     overflow-y: auto;
@@ -194,6 +219,20 @@ th {
     fill: none;
 }
 
-ul li a {
+.sideNav-list li a {
     color: #fff;
+}
+
+.modal-btn{
+    text-align: end;
+    margin-top: 30px;
+}
+
+.modal-content{
+    padding: 30px;;
+}
+
+.mx-auto .btn{
+    padding: .375rem 2.75rem
+
 }
