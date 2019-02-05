@@ -1,0 +1,105 @@
+body {
+    font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px!important;
+    color: #8a8a8a!important;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.px-0 {
+    padding: 0;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-0{
+    margin-top: 0!important;
+}
+
+.py-10 {
+    padding: 10px 0;
+}
+
+.navbar-brand{
+    font-size: 30px!important;
+    font-weight: 700!important;
+}
+
+.nav-outline{
+    padding: 28px 0;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+}
+
+.flex-nowrap{
+    flex-wrap: nowrap!important;
+    width: 20% !important;
+    height: 37px!important;
+}
+
+.input-height {
+    height: 37px!important;
+}
+
+.input-height::placeholder {
+    font-size: 16px;
+    color: #dddddd;
+}
+
+th {
+    border-top: none!important;
+}
+
+.fa {
+    margin: 0 5px!important;
+}
+
+.table-pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 33px;
+}
+
+
+.page-item.active .page-link  {
+    background: linear-gradient(120deg, #1dccdf 0%, #1de4bd 100%)!important;
+    border-color: transparent!important;
+}
+
+.page-link{
+    border-color: transparent!important;
+    border-radius: 3px;
+}
+
+.paginate_button{
+    border: none!important;
+}
+
+.activePage{
+    background: linear-gradient(120deg, #1dccdf 0%, #1de4bd 100%);
+}
+
+.nav-stacked > li > ul > li >a {
+    padding-left: 30px;
+    padding-top:2px;
+    padding-bottom: 2px;
+    font-weight:400;
+    cursor: pointer;
+}
+
+.nav-stacked > li > ul > li > a::before {
+    content: "\25CF";
+    padding-right:5px;
+}
+
+.col-form-label{
+    color: black;
+    font-weight: 700;
+}
