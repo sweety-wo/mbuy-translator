@@ -110,8 +110,16 @@ th {
 
 .form-inline{
     width:100% !important;
-    justify-content: space-between!important;
+    justify-content: flex-start!important;
     align-items: center!important;
+}
+
+.modal-body .form .form-group {
+    margin-bottom: 50px!important;
+}
+
+.nav-outline .form-inline .form-group{
+    margin-right: 12%;
 }
 
 .modal-body {
