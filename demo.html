@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>ShipTime</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/_main.css">
+    <link rel="stylesheet" href="css/style.css">
+<!--    <link rel="stylesheet" href="css/overwrite.css">-->
     <!--<link rel="stylesheet" href="css/overwrite.css">-->
 
 </head>
@@ -39,15 +39,15 @@
                 <a href="#Manage" class="nav-label action-toggle-submenu collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="Manage"> <i data-feather="thumbs-up"></i> <span class="nav-text">Project</span>
                 </a>
                 <ul class="nav-submenu collapse" id="Manage">
-                    <li><a href="#" class="nav-link"><span class="nav-text">>New Project</span></a></li>
-                    <li><a href="#" class="nav-link"><span class="nav-text">Select Project</span></a></li>
+                    <li><a href="new-project.html" class="nav-link"><span class="nav-text">New Project</span></a></li>
+                    <li><a href="demo.html" class="nav-link"><span class="nav-text">Select Project</span></a></li>
                 </ul>
             </li>
             <li><a href="#Plugins" class="nav-label action-toggle-submenu collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="Plugins"> <i data-feather="anchor"></i> <span class="nav-text">Translator</span>
             </a>
                 <ul class="nav-submenu collapse" id="Plugins">
-                    <li><a href="#" class="nav-link"><span class="nav-text">New Translator</span></a></li>
-                    <li><a href="#" class="nav-link"><span class="nav-text">Select Translator</span></a></li>
+                    <li><a href="new-translator.html" class="nav-link"><span class="nav-text">New Translator</span></a></li>
+                    <li><a href="select-translator.html" class="nav-link"><span class="nav-text">Select Translator</span></a></li>
                 </ul>
             </li>
         </ul>
@@ -56,36 +56,29 @@
 </header>
 <main id="_mainContainer">
     <div class="_mainContainer">
-
-
         <div class="row">
             <div class="col-12">
-                <nav class="navbar">
-                    <div class="nav-outline">
-                        <a class="navbar-brand navTitle">Projects</a>
-                        <div class="input-group flex-nowrap">
-                            <input type="text" placeholder="Search" class="form-control input-height">
-                            <div class="input-group-prepend">
-                                <button class="input-group-text" id="addon-wrapping"><i class="fa fa-search"></i></button>
-                            </div>
-                        </div>
-
+                <div class="mx-auto d-flex justify-content-between pb-4 border-bottom" style="width: 95%;">
+                    <h4 class="text-secondary font-weight-bold">Projects</h4>
+                    <div class="d-flex">
+                        <input type="text" placeholder="Search" class="form-control-lg border border-right-0">
+                        <button class="input-group-text" id="addon-wrapping"><i class="fa fa-search"></i></button>
                     </div>
-                </nav>
+                </div>
                 <div class="card mx-auto mt-20" style="width: 95%;">
                     <div class="card-body">
                         <div class="table-responsive-lg">
                             <table class="table table-striped">
                                 <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Translation</th>
-                                    <th>Language</th>
-                                    <th>Status</th>
-                                    <th>Words</th>
-                                    <th>Chars</th>
-                                    <th>Created</th>
-                                    <th>Action</th>
+                                    <th class="border-top-0">Name</th>
+                                    <th class="border-top-0">Translation</th>
+                                    <th class="border-top-0">Language</th>
+                                    <th class="border-top-0">Status</th>
+                                    <th class="border-top-0">Words</th>
+                                    <th class="border-top-0">Chars</th>
+                                    <th class="border-top-0">Created</th>
+                                    <th class="border-top-0">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody id="myTable">
@@ -99,9 +92,11 @@
                                     <td>96</td>
                                     <td>Jan 21</td>
                                     <td>
-                                        <i class="fa fa-edit"></i>
-                                        <i class="fa fa-clone mx-5"></i>
-                                        <i class="fa fa-trash-o mx-5"></i>
+                                        <div class="iconContainer">
+                                            <i class="fa fa-edit"></i>
+                                            <i class="fa fa-clone mx-5"></i>
+                                            <i class="fa fa-trash-o mx-5"></i>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -113,9 +108,11 @@
                                     <td>96</td>
                                     <td>Jan 21</td>
                                     <td>
-                                        <i class="fa fa-edit"></i>
-                                        <i class="fa fa-clone mx-5"></i>
-                                        <i class="fa fa-trash-o mx-5"></i>
+                                        <div class="iconContainer">
+                                            <i class="fa fa-edit"></i>
+                                            <i class="fa fa-clone mx-5"></i>
+                                            <i class="fa fa-trash-o mx-5"></i>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -127,9 +124,11 @@
                                     <td>96</td>
                                     <td>Jan 21</td>
                                     <td>
-                                        <i class="fa fa-edit"></i>
-                                        <i class="fa fa-clone mx-5"></i>
-                                        <i class="fa fa-trash-o mx-5"></i>
+                                        <div class="iconContainer">
+                                            <i class="fa fa-edit"></i>
+                                            <i class="fa fa-clone mx-5"></i>
+                                            <i class="fa fa-trash-o mx-5"></i>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -141,9 +140,11 @@
                                     <td>96</td>
                                     <td>Jan 21</td>
                                     <td>
-                                        <i class="fa fa-edit"></i>
-                                        <i class="fa fa-clone mx-5"></i>
-                                        <i class="fa fa-trash-o mx-5"></i>
+                                        <div class="iconContainer">
+                                            <i class="fa fa-edit"></i>
+                                            <i class="fa fa-clone mx-5"></i>
+                                            <i class="fa fa-trash-o mx-5"></i>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -155,9 +156,11 @@
                                     <td>96</td>
                                     <td>Jan 21</td>
                                     <td>
-                                        <i class="fa fa-edit"></i>
-                                        <i class="fa fa-clone mx-5"></i>
-                                        <i class="fa fa-trash-o mx-5"></i>
+                                        <div class="iconContainer">
+                                            <i class="fa fa-edit"></i>
+                                            <i class="fa fa-clone mx-5"></i>
+                                            <i class="fa fa-trash-o mx-5"></i>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -169,9 +172,11 @@
                                     <td>96</td>
                                     <td>Jan 21</td>
                                     <td>
-                                        <i class="fa fa-edit"></i>
-                                        <i class="fa fa-clone mx-5"></i>
-                                        <i class="fa fa-trash-o mx-5"></i>
+                                        <div class="iconContainer">
+                                            <i class="fa fa-edit"></i>
+                                            <i class="fa fa-clone mx-5"></i>
+                                            <i class="fa fa-trash-o mx-5"></i>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -183,9 +188,11 @@
                                     <td>96</td>
                                     <td>Jan 21</td>
                                     <td>
-                                        <i class="fa fa-edit"></i>
-                                        <i class="fa fa-clone mx-5"></i>
-                                        <i class="fa fa-trash-o mx-5"></i>
+                                        <div class="iconContainer">
+                                            <i class="fa fa-edit"></i>
+                                            <i class="fa fa-clone mx-5"></i>
+                                            <i class="fa fa-trash-o mx-5"></i>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -197,9 +204,11 @@
                                     <td>96</td>
                                     <td>Jan 21</td>
                                     <td>
-                                        <i class="fa fa-edit"></i>
-                                        <i class="fa fa-clone mx-5"></i>
-                                        <i class="fa fa-trash-o mx-5"></i>
+                                        <div class="iconContainer">
+                                            <i class="fa fa-edit"></i>
+                                            <i class="fa fa-clone mx-5"></i>
+                                            <i class="fa fa-trash-o mx-5"></i>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -211,9 +220,11 @@
                                     <td>96</td>
                                     <td>Jan 21</td>
                                     <td>
-                                        <i class="fa fa-edit"></i>
-                                        <i class="fa fa-clone mx-5"></i>
-                                        <i class="fa fa-trash-o mx-5"></i>
+                                        <div class="iconContainer">
+                                            <i class="fa fa-edit"></i>
+                                            <i class="fa fa-clone mx-5"></i>
+                                            <i class="fa fa-trash-o mx-5"></i>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -225,9 +236,11 @@
                                     <td>96</td>
                                     <td>Jan 21</td>
                                     <td>
-                                        <i class="fa fa-edit"></i>
-                                        <i class="fa fa-clone mx-5"></i>
-                                        <i class="fa fa-trash-o mx-5"></i>
+                                        <div class="iconContainer">
+                                            <i class="fa fa-edit"></i>
+                                            <i class="fa fa-clone mx-5"></i>
+                                            <i class="fa fa-trash-o mx-5"></i>
+                                        </div>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -247,10 +260,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
     </div>
 </main>
 <!-- Optional JavaScript -->

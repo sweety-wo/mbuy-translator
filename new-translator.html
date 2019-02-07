@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/overwrite.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/_main.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- =======================================================
       Theme Name: Personal
       Theme URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
@@ -23,67 +22,44 @@
 </head>
 
 <body>
-<div class="container-fluid px-0">
-    <div class="menu">
-        <div class="navbar-header">
-            <div id="_slideNav" class="sideNav blue-gradient">
-                <div class="_logo-associations-navbar d-block d-sm-block d-md-none">
-                    <img class="gwt-Image" src="images/brand/logo/logo-cfib-en.png" style="height: 40px;">
-                </div>
-                <div>
-                    <ul class="sideNav-list list-unstyled">
-                        <li><a aria-controls="Shipping" aria-expanded="true"
-                               class="nav-label action-toggle-submenu" data-toggle="collapse"
-                               href="#Shipping">
-                            <i class="fa fa-user-o" aria-hidden="true"></i>
-                            <span class="nav-text">Account</span> </a>
-                            <ul class="nav-submenu show" id="Shipping">
-                                <li ><a href="#" class="nav-link c-pointer">Setting</a>
-                                </li>
-                                <li class=""><a href="#" class="nav-link c-pointer"><span
-                                        class="nav-text">LogOut</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a aria-controls="Manage" aria-expanded="true"
-                               class="nav-label action-toggle-submenu " data-toggle="collapse"
-                               href="#Manage">
-                            <i class="fa fa-list-alt" aria-hidden="true"></i>
-                            <span class="nav-text">Project</span> </a>
-                            <ul class="nav-submenu show" id="Manage">
-                                <li><a href="new-project.html" class="nav-link c-pointer"><span
-                                        class="nav-text">New Project</span></a></li>
-                                <li><a href="index.html" class="nav-link c-pointer"><span
-                                        class="nav-text">Select Project</span></a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a aria-controls="Tools" aria-expanded="true"
-                               class="nav-label action-toggle-submenu" data-toggle="collapse"
-                               href="#Tools">
-                            <i class="fa fa-language" aria-hidden="true"></i>
-                            <span class="nav-text">Translator</span> </a>
-                            <ul class="nav-submenu show" id="Tools">
-                                <li><a href="new-translator.html" class="nav-link c-pointer"><span
-                                        class="nav-text">New Translator</span></a>
-                                </li>
-                                <li><a href="select-translator.html" class="nav-link c-pointer"><span
-                                        class="nav-text">Select Translator</span></a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<header id="_mainHeader" class="_mainHeader-white">
+    <!-- Sidebar navigation -->
+    <div class="_slideAction"><a href="#" data-activates="slide-out" class="slide-btn waves"><i class="fa fa-bars"></i></a></div>
+    <div id="_slideNav" class="sideNav blue-gradient">
+        <ul class="sideNav-list list-unstyled">
+            <li>
+                <a href="#" class="nav-label active"><i data-feather="truck"></i><span class="nav-text">Account</span></a>
+                <ul class="nav-submenu">
+                    <li><a href="quote-ship.html" class="nav-link active"><span class="nav-text">Setting</span></a></li>
+                    <li><a href="quote-ship.html" class="nav-link active"><span class="nav-text">LogOut</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#Manage" class="nav-label action-toggle-submenu collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="Manage"> <i data-feather="thumbs-up"></i> <span class="nav-text">Project</span>
+                </a>
+                <ul class="nav-submenu collapse" id="Manage">
+                    <li><a href="new-project.html" class="nav-link"><span class="nav-text">New Project</span></a></li>
+                    <li><a href="demo.html" class="nav-link"><span class="nav-text">Select Project</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#Plugins" class="nav-label action-toggle-submenu collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="Plugins"> <i data-feather="anchor"></i> <span class="nav-text">Translator</span>
+            </a>
+                <ul class="nav-submenu collapse" id="Plugins">
+                    <li><a href="new-translator.html" class="nav-link"><span class="nav-text">New Translator</span></a></li>
+                    <li><a href="select-translator.html" class="nav-link"><span class="nav-text">Select Translator</span></a></li>
+                </ul>
+            </li>
+        </ul>
+
     </div>
-    <div class="content" style="margin-left: 240px">
+</header>
+<main id="_mainContainer">
+    <div class="_mainContainer">
         <div class="row">
-            <div class="col-sm-12">
-                <nav class="navbar">
-                    <div class="nav-outline">
-                        <a class="navbar-brand navTitle">Translator</a>
-                    </div>
-                </nav>
+            <div class="col-12">
+                <div class="mx-auto d-flex justify-content-between pb-4 border-bottom" style="width: 95%;">
+                    <h4 class="text-secondary font-weight-bold">Translate</h4>
+                </div>
                 <div class="card mx-auto mt-20" style="width: 95%">
                     <div class="card-body">
                         <form class="pt-5 pb-2">
@@ -125,26 +101,12 @@
             </div>
         </div>
     </div>
+</main>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/feather.min.js"></script>
+<script src="js/_main.js"></script>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/javascript" src="js/fliplightbox.min.js"></script>
-<script type="text/javascript">
-    $('#graphics').flipLightBox()
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/javascript" src="js/fliplightbox.min.js"></script>
-<script type="text/javascript">
-    $('#graphics').flipLightBox()
-</script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -74,10 +74,10 @@ body:not(.fixed-sn) main {padding-left: 56px;}
 
 /*---- main ----*/
 body.fixed-sn #_mainContainer {padding-left: 240px;}
-#_mainContainer {padding-top: 56px; -webkit-transition: all 2s; transition: all 0.2s; min-height: 100%;background-color: #fafafa;}
-._mainContainer {margin: 0 auto; padding: 1.5rem; }
+#_mainContainer {padding-top: 0; -webkit-transition: all 2s; transition: all 0.2s; min-height: 100%;background-color: #fafafa;}
+._mainContainer {margin: 0 auto; }
 
-#_mainContainer .container-fluid {padding: 0px; max-width: 1900px;}
+#_mainContainer .container-fluid {padding: 0px;}
 
 @-webkit-keyframes rotate360{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
 @keyframes rotate360{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
@@ -98,9 +98,47 @@ body.fixed-sn #_mainContainer {padding-left: 240px;}
 
 
 @media only screen and (max-width: 767px) {
-  ._topContainer, ._mainContainer {padding: 1rem; }
-  #_mainContainer._fixed-popup-container ._mainContainer {padding: 0.5rem 1.5rem 2.5rem !important;}
+ /* ._topContainer, ._mainContainer {padding: 1rem; }
+  #_mainContainer._fixed-popup-container ._mainContainer {padding: 0.5rem 1.5rem 2.5rem !important;}*/
 }
 @media only screen and (max-width: 576px) {
-  #_mainHeader .navbar-nav .dropdown-menu-big { min-width: 10rem; }
+  /*#_mainHeader .navbar-nav .dropdown-menu-big { min-width: 10rem; }*/
+
+     .small{
+         display: grid;
+         margin-top: 10px!important;
+         margin-left: 0!important;
+         width: 75%;
+     }
+
 }
+
+/*----- pagination ----*/
+
+.table-pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 33px;
+}
+
+.page-item.active .page-link  {
+    background: linear-gradient(120deg, #1dccdf 0%, #1de4bd 100%)!important;
+    border-color: transparent!important;
+}
+
+.page-link{
+    border-color: transparent!important;
+    border-radius: 3px;
+}
+
+.paginate_button{
+    border: none!important;
+}
+
+.activePage{
+    background: linear-gradient(120deg, #1dccdf 0%, #1de4bd 100%);
+}
+
+
+

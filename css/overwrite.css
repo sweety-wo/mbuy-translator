@@ -1,9 +1,7 @@
-body {
-    font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-    font-size: 14px!important;
-    color: #8a8a8a!important;
-    line-height: 1.5;
-    overflow-x: hidden;
+
+
+.mx-5{
+    margin: 0 5px!important;
 }
 
 .px-0 {
@@ -22,86 +20,12 @@ body {
     padding: 10px 0;
 }
 
-.navbar-brand{
-    font-size: 25px!important;
-    font-weight: 700!important;
-}
-
-.nav-outline{
-    padding: 28px 0;
-    width: 100%;
-    border-bottom: 1px solid #dddddd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 25px;
-}
-
-.flex-nowrap{
-    flex-wrap: nowrap!important;
-    width: 23% !important;
-    height: 37px!important;
-}
-
 .col-form-label{
     color: inherit!important;
 }
 
-.input-height {
-    height: 37px!important;
-}
-
-.input-height::placeholder {
-    font-size: 16px;
-    color: #dddddd;
-}
-
-th {
-    border-top: none!important;
-}
-
-.mx-5{
-    margin: 0 5px!important;
-}
-
-.table-pagination{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 33px;
-}
 
 
-.page-item.active .page-link  {
-    background: linear-gradient(120deg, #1dccdf 0%, #1de4bd 100%)!important;
-    border-color: transparent!important;
-}
-
-.page-link{
-    border-color: transparent!important;
-    border-radius: 3px;
-}
-
-.paginate_button{
-    border: none!important;
-}
-
-.activePage{
-    background: linear-gradient(120deg, #1dccdf 0%, #1de4bd 100%);
-}
-
-.nav-stacked > li > ul > li >a {
-    padding-left: 30px;
-    padding-top:2px;
-    padding-bottom: 2px;
-    font-weight:400;
-    cursor: pointer;
-}
-
-.nav-stacked > li > ul > li > a::before {
-    content: "\25CF";
-    padding-right:5px;
-}
 
 .col-form-label{
     color: black;
@@ -114,16 +38,8 @@ th {
     justify-content: space-between;
 }
 
-.form-group{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 1rem 3rem 0 0;
-}
-
-
-.modal-body {
-    padding: 50px!important;
+.modal-content{
+    padding: 20px;
 }
 
 .modal-footer{
@@ -142,96 +58,6 @@ th {
     border-radius: .25rem;
 }
 
-.sideNav ul.sideNav-list li {
-    padding: 0px 8px 1px 8px;
-}
-
-.sideNav ul.sideNav-list {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-}
-
-.sideNav .sideNav-list a.active, .sideNav .sideNav-list a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.sideNav .sideNav-list a.nav-label {
-    display: inline-block;
-    position: relative;
-    margin-left: 15px;
-    width: 94%;
-}
-
-.nav-label.active {
-    margin-left: 0!important;
-    width: 10%!important;
-}
-
-.nav-text {
-    margin-left: 15px;
-}
-
-.nav-text.active{
-    display: none;
-}
-
-
-.sideNav .sideNav-list a {
-    width: 90%;
-    font-size: 0.9rem;
-    padding: 8px 11px;
-    min-height: 38px;
-    min-width: 40px;
-    white-space: nowrap;
-    text-decoration: none;
-    border-radius: 20px;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-
-
-.nav-submenu {
-    list-style: disc;
-    list-style-position: inside;
-    margin-left: 15px;
-}
-
-.nav-submenu a  {
-    display: inline-grid;
-    margin-left: -16px;
-}
-
-
-.nav-submenu a:hover{
-    text-decoration: underline;
-    background-color: transparent!important;
-}
-
-
-#_slideNav {
-    padding-top: 45px;
-    -webkit-transition: width 2s;
-    transition: width 0.2s;
-    overflow-y: auto;
-    -webkit-transition: 300ms;
-    -moz-transition: 300ms;
-    transition: 300ms;
-}
-
-.sideNav .sideNav-list .feather {
-    margin-right: 5px;
-    float: left;
-    min-height: 20px;
-}
-
-
-.sideNav-list li a {
-    color: #fff;
-}
 
 .modal-btn{
     text-align: end;
@@ -263,20 +89,12 @@ th {
     text-align: center;
 }
 
-.toogleBtn {
-    padding: 0!important;
-    z-index: 200;
-}
-
-
-.upload-file{
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-}
 
 
 
+
+
+/*
 @media only screen and (max-width: 768px) {
 
      .navbar {
@@ -289,11 +107,6 @@ th {
 
      .project-form{
          flex-direction: column;
-     }
-     .form-group{
-         margin:0;
-         margin-bottom: 1rem!important;
-         justify-content: center;
      }
 
       .menu{
@@ -311,4 +124,6 @@ th {
       .menu.active {
           margin-left: 0;
       }
-}
+}*/
+
+
