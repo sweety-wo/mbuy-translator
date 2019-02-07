@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ShipTime</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/_main.css">
+    <!--<link rel="stylesheet" href="css/overwrite.css">-->
+
+</head>
+
+<body>
+<!-- <div class="loader">
+        <div class="text-center"><i class="fa fa-circle-o-notch fa-spin fa-3x" aria-hidden="true"></i>
+            <div class="loader-text">LOADING</div>
+        </div>
+    </div> -->
+<header id="_mainHeader" class="_mainHeader-white">
+    <!-- Sidebar navigation -->
+    <div class="_slideAction"><a href="#" data-activates="slide-out" class="slide-btn waves"><i class="fa fa-bars"></i></a></div>
+    <div id="_slideNav" class="sideNav blue-gradient">
+        <ul class="sideNav-list list-unstyled">
+            <li>
+                <a href="#" class="nav-label active"><i data-feather="truck"></i><span class="nav-text">Account</span></a>
+                <ul class="nav-submenu">
+                    <li><a href="quote-ship.html" class="nav-link active"><span class="nav-text">Setting</span></a></li>
+                    <li><a href="quote-ship.html" class="nav-link active"><span class="nav-text">LogOut</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#Manage" class="nav-label action-toggle-submenu collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="Manage"> <i data-feather="thumbs-up"></i> <span class="nav-text">Project</span>
+                </a>
+                <ul class="nav-submenu collapse" id="Manage">
+                    <li><a href="#" class="nav-link"><span class="nav-text">>New Project</span></a></li>
+                    <li><a href="#" class="nav-link"><span class="nav-text">Select Project</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#Plugins" class="nav-label action-toggle-submenu collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="Plugins"> <i data-feather="anchor"></i> <span class="nav-text">Translator</span>
+            </a>
+                <ul class="nav-submenu collapse" id="Plugins">
+                    <li><a href="#" class="nav-link"><span class="nav-text">New Translator</span></a></li>
+                    <li><a href="#" class="nav-link"><span class="nav-text">Select Translator</span></a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</header>
+<main id="_mainContainer">
+    <div class="_mainContainer">
+
+
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar">
+                    <div class="nav-outline">
+                        <a class="navbar-brand navTitle">Projects</a>
+                        <div class="input-group flex-nowrap">
+                            <input type="text" placeholder="Search" class="form-control input-height">
+                            <div class="input-group-prepend">
+                                <button class="input-group-text" id="addon-wrapping"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+                <div class="card mx-auto mt-20" style="width: 95%;">
+                    <div class="card-body">
+                        <div class="table-responsive-lg">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Translation</th>
+                                    <th>Language</th>
+                                    <th>Status</th>
+                                    <th>Words</th>
+                                    <th>Chars</th>
+                                    <th>Created</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+                                <tbody id="myTable">
+
+                                <tr>
+                                    <td>horoscope banner</td>
+                                    <td>OHT</td>
+                                    <td>EN</td>
+                                    <td>Completed</td>
+                                    <td>15</td>
+                                    <td>96</td>
+                                    <td>Jan 21</td>
+                                    <td>
+                                        <i class="fa fa-edit"></i>
+                                        <i class="fa fa-clone mx-5"></i>
+                                        <i class="fa fa-trash-o mx-5"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>horoscope banner</td>
+                                    <td>OHT</td>
+                                    <td>EN</td>
+                                    <td>Completed</td>
+                                    <td>15</td>
+                                    <td>96</td>
+                                    <td>Jan 21</td>
+                                    <td>
+                                        <i class="fa fa-edit"></i>
+                                        <i class="fa fa-clone mx-5"></i>
+                                        <i class="fa fa-trash-o mx-5"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>horoscope banner</td>
+                                    <td>OHT</td>
+                                    <td>EN</td>
+                                    <td>Completed</td>
+                                    <td>15</td>
+                                    <td>96</td>
+                                    <td>Jan 21</td>
+                                    <td>
+                                        <i class="fa fa-edit"></i>
+                                        <i class="fa fa-clone mx-5"></i>
+                                        <i class="fa fa-trash-o mx-5"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>horoscope banner</td>
+                                    <td>OHT</td>
+                                    <td>EN</td>
+                                    <td>Completed</td>
+                                    <td>15</td>
+                                    <td>96</td>
+                                    <td>Jan 21</td>
+                                    <td>
+                                        <i class="fa fa-edit"></i>
+                                        <i class="fa fa-clone mx-5"></i>
+                                        <i class="fa fa-trash-o mx-5"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>horoscope banner</td>
+                                    <td>OHT</td>
+                                    <td>EN</td>
+                                    <td>Completed</td>
+                                    <td>15</td>
+                                    <td>96</td>
+                                    <td>Jan 21</td>
+                                    <td>
+                                        <i class="fa fa-edit"></i>
+                                        <i class="fa fa-clone mx-5"></i>
+                                        <i class="fa fa-trash-o mx-5"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>horoscope banner</td>
+                                    <td>OHT</td>
+                                    <td>EN</td>
+                                    <td>Completed</td>
+                                    <td>15</td>
+                                    <td>96</td>
+                                    <td>Jan 21</td>
+                                    <td>
+                                        <i class="fa fa-edit"></i>
+                                        <i class="fa fa-clone mx-5"></i>
+                                        <i class="fa fa-trash-o mx-5"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>horoscope banner</td>
+                                    <td>OHT</td>
+                                    <td>EN</td>
+                                    <td>Completed</td>
+                                    <td>15</td>
+                                    <td>96</td>
+                                    <td>Jan 21</td>
+                                    <td>
+                                        <i class="fa fa-edit"></i>
+                                        <i class="fa fa-clone mx-5"></i>
+                                        <i class="fa fa-trash-o mx-5"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>horoscope banner</td>
+                                    <td>OHT</td>
+                                    <td>EN</td>
+                                    <td>Completed</td>
+                                    <td>15</td>
+                                    <td>96</td>
+                                    <td>Jan 21</td>
+                                    <td>
+                                        <i class="fa fa-edit"></i>
+                                        <i class="fa fa-clone mx-5"></i>
+                                        <i class="fa fa-trash-o mx-5"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>horoscope banner</td>
+                                    <td>OHT</td>
+                                    <td>EN</td>
+                                    <td>Completed</td>
+                                    <td>15</td>
+                                    <td>96</td>
+                                    <td>Jan 21</td>
+                                    <td>
+                                        <i class="fa fa-edit"></i>
+                                        <i class="fa fa-clone mx-5"></i>
+                                        <i class="fa fa-trash-o mx-5"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>horoscope banner</td>
+                                    <td>OHT</td>
+                                    <td>EN</td>
+                                    <td>Completed</td>
+                                    <td>15</td>
+                                    <td>96</td>
+                                    <td>Jan 21</td>
+                                    <td>
+                                        <i class="fa fa-edit"></i>
+                                        <i class="fa fa-clone mx-5"></i>
+                                        <i class="fa fa-trash-o mx-5"></i>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="table-pagination">
+                        <span class="footerText">Showing 1 to 10 of 12 entries</span>
+                        <ul class="pagination" style="border-color: transparent;">
+                            <li class="paginate_button page-item previous disabled"><a class="page-link" href="#">Previous</a></li>
+                            <li class="paginate_button page-item active activePage"><a class="page-link" href="#">1</a></li>
+                            <li class="paginate_button page-item "><a class="page-link" href="#">2</a></li>
+                            <li class="paginate_button page-item next"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</main>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/feather.min.js"></script>
+<script src="js/_main.js"></script>
+
+
+
+</body>
+
+</html>
