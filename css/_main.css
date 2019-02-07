@@ -107,10 +107,9 @@ body.fixed-sn #_mainContainer {padding-left: 240px;}
      .small{
          display: grid;
          margin-top: 10px!important;
-         margin-left: 0!important;
          width: 75%;
+         text-align: -webkit-center;
      }
-
 }
 
 /*----- pagination ----*/
