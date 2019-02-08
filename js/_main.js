@@ -40,7 +40,7 @@ $(function() {
 
 })
 
-feather.replace()
+/*feather.replace()*/
 
 $('body').on('click', function (e) {
     $('[data-toggle="popover"]').each(function () {
